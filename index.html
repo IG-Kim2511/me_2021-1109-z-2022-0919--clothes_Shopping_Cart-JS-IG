@@ -1,18 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-<body>
-    
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <h1>hi</h1>
+    <div class="world">
+      <div class="app-bg">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li class="btn"><a href="#"></a></li>
+          <li class="btn"><a href="#"></a></li>
+          <li>
+            <a href="#"> </a>
+          </li>
+          <li class="">
+            <a href="#"> </a>
+          </li>
+          <li>
+            <a href="#"> </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="shopping-bag">
+        <a href="#">
+          <img src="./icons/bag.png" alt="" />
+          Cart
+          <div class="total-items-in-cart">0</div>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="product-list">
+        <div class="products">
+            <!-- js09. render products -->
+                <!-- 
+                    <div class="item">
+                        <div class="item-container">
+                            <div class="item-img">
+                                <img src="./img/Clothing-Fill-Color(1).png" alt="">
+                            </div>
+                            <div class="desc">
+                                <h2>product.name</h2>
+                                <h2><small>$</small>product.price</h2>
+                                <p>
+                                    product.description
+                                </p>
+                            </div>
+                            <div class="add-to-wishlist">
+                                <img src="./icons/heart.png" alt="add to wish list">
+                            </div>
+                            <div class="add-to-cart" >
+                                <img src="./icons/bag-plus.png" alt="add to cart">
+                            </div>
+                        </div>
+                    </div>
+                 -->
+
+                 <div class="item">
+                    <div class="item-container">
+                        <div class="item-img">
+                            <img src="./img/Clothing-Fill-Color(1).png" alt="">
+                        </div>
+                        <div class="desc">
+                            <h2>product.name</h2>
+                            <h2><small>$</small> product.price</h2>
+                            <p>product.desc</p>
+                        </div>
+                        <div class="add-to-wishlist">
+                            <img src="./icons/heart.png" alt="">
+                            <div class="add-to-cart">
+                                <img src="./icons/bag-plus.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="cart">
+                    <div class="cart-header">
+                        <div class="column1"></div>
+                        <div class="column2"></div>
+                        <div class="column3"></div>
+                    </div>
+                    <div class="cart-items">
+                        <!-- js13-40. render cart items -->
+
+                        <!-- 
+                            <div class="cart-item">
+                                <div class="item-info">
+                                    <img src="./img/Clothing-Fill-Color(1).png" alt="">
+                                    <h4>item.name</h4>
+                                </div>
+                                <div class="unit-price">
+                                    <small>$</small>item.price
+                                </div>
+                                <div class="units">
+                                    <div class="btn minus" >-</div>
+                                    <div class="number">numberOfUnits</div>
+                                    <div class="btn plus" >+</div>           
+                                </div>
+                            </div>
+                        -->
+                        <div class="cart-item">
+                            <div class="item-info">
+                                <img src="./img/Clothing-Fill-Color(1).png" alt="">
+                                <h4>item.name</h4>
+                            </div>
+                            <div class="unit-price">
+                                <small>$</small>item.price
+                            </div>
+                            <div class="units">
+                                <div class="btn minus">-</div>
+                                <div class="number"></div>
+                                <div class="btn plus">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <div class="delete-all">
+                            <div class="delete-all-btn myBtn">dlelte all</div>
+                        </div>
+                        <div class="subtotal">
+                            Subtotal : $0
+                        </div>
+                        <div class="checkout">
+                            <div class="myBtn checkoutBtn">proceed to checkout</div>
+                        </div>
+                    </div>
+                 </div>
+
+        </div>
+      </div>
+    </main>
 
     <script src="./products.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
